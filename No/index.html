@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .Red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="1" >A</div>
+<div id="2" class="Red">B</div>
+<img id="Img1" src = "https://www.westminster.ac.uk/sites/default/public-files/styles/panel_image_third_320px/public/general-images/epq-meme.jpg?itok=PQuo_m3s%20420w,%20/sites/default/public-files/styles/panel_image_1_4/public/general-images/epq-meme.jpg?itok=8sm6UBVy%20560w,%20/sites/default/public-files/styles/panel_image_1_2_768px_/public/general-images/epq-meme.jpg?itok=5b7ZyKpI%20800w" />
+<div id="3" >Hello</div>
+
+<button Onclick="OnClick()">CLick</button>
+
+<script type="text/javascript">
+        var img_src;
+    function OnClick(){
+        var Element3 = document.getElementById("1");
+        Element3.innerText="HoHoHo";
+        Element3.classList.add("Red");
+        console.log("Shit");
+        img_src =document.getElementById("Img1").src;
+        document.getElementById("Img1").src="https://images-cdn.ubuy.ae/645b2970a5833c02b06cf996-handsome-squidward-bumper-sticker-vinyl.jpg";
+
+        
+        // 設定延遲 3 秒後恢復原狀
+        setTimeout(function() {
+            Element3.innerText = "Hello";  // 恢復原來的文字（可以根據需要改成原本的文字）
+            Element3.classList.remove("Red");  // 移除加上的樣式
+            //document.getElementById("Img1").src = "https://www.westminster.ac.uk/sites/default/public-files/styles/panel_image_third_320px/public/general-images/epq-meme.jpg?itok=PQuo_m3s%20420w,%20/sites/default/public-files/styles/panel_image_1_4/public/general-images/epq-meme.jpg?itok=8sm6UBVy%20560w,%20/sites/default/public-files/styles/panel_image_1_2_768px_/public/general-images/epq-meme.jpg?itok=5b7ZyKpI%20800w";  // 恢復圖片（可以改成原本的圖片）
+            document.getElementById("Img1").src=img_src;
+        }, 600);  // 3000 毫秒 = 3 秒
+        
+
+        /*
+        // 設定延遲 3 秒後恢復到原始狀態
+        setTimeout(function() {
+            Element3.innerText = originalText;  // 恢復原來的文字
+            Element3.className = originalClass;  // 恢復原來的類別
+            Img1.src = originalImgSrc;  // 恢復原來的圖片
+        }, 600);  // 3 秒後執行
+        */
+         
+        
+    }
+    
+    var  Element1 = document.getElementById("1");
+    Element1.classList.add("Red");
+    Element1.innerText = "<H1>Holy</H1>";
+
+    var  Element2 = document.getElementById("2");
+    Element2.classList.remove("Red");
+    Element2.innerHTML = "<H3>HaHaHa</H3>";
+    
+    var i=999;
+    console.log("This Year Is "+i);
+    
+    var English = [9,18,36,60,63,99];
+    var max = -99999;
+    console.log(English);
+    console.log(English[2]);
+    
+   
+    for (var i=0;i<English.length;i++){
+        if (English[i]>max){
+            max = English[i];
+        }
+    }
+    console.log("最大值"+max);
+</script>
+
+</body>
+</html>

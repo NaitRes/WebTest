@@ -1,0 +1,88 @@
+﻿.Big {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+    width: 100%;
+    height: auto;
+}
+
+#List {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    width: 50%;
+    list-style-position: inside; /* 讓點點與文字對齊 */
+    padding-left: 0; /* 取消預設的左邊距 */
+}
+
+.Big>img{
+    width: 15%;
+    height: auto;
+}
+
+.Text {
+    text-align: center; /* 讓每個清單項目內的文字置中 */
+//list-style-type: disc; /* 顯示點點 */
+}
+
+/*
+.Text li {
+
+    text-align: center; // 讓每個清單項目內的文字置中
+    list-style-type: disc;  //顯示點點
+}
+*/
+
+.Red {
+    color: red;
+}
+
+.Green {
+    color: #2ed259;
+}
+
+.Blue {
+    color: #0b3fdd;
+}
+
+.Yellow {
+    color: #ffef35;
+}
+
+.Purple {
+    color: #741bd5;
+}
+
+.Aoi {
+    color: #11def4;
+}
+
+.Gray {
+    color: #b6b6b6;
+}
+
+.Orange {
+    color: #ef5c1e;
+}
+
+.Black {
+    color: #515151;
+}
+
+.Pink {
+    color: #f1a6e1;
+}
+
+.InkGreen {
+    color: #3e5e3d;
+}
+
+.SmallGreen {
+    color: #a7d8a6;
+}
+
+.SmallPurple {
+    color: #bface3;
+}
